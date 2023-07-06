@@ -1,6 +1,6 @@
 import './App.css'
+import City from './components/Ejemplo'
 import Climater from './components/Climate';
-import City from './components/Ejemplo';
 
 function App() {
  
