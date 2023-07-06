@@ -34,7 +34,7 @@ const City = () => {
          
          <div className="container-clima">
             <div className="container-clima_temp">                
-                <img className="container-icon" src={`${img}`} alt="" />
+                <img className="container-icon" src={ `https://openweathermap.org/img/wn/${city.weather?.[0].icon}@2x.png`} alt="" />
                 <h2> {Math.round(city.main?.temp)}°C</h2>
             </div>
             <div className="container-clima_viento">
