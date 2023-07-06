@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+body{    
+    margin: 20px;
+    background: radial-gradient(circle, #D5F3FF 0%, #51B4E8)
+    
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.container-clima{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height:  700px;
+    color: #085781;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15%;
+    background-color: #cbecfd;
+    border: none;
+}
+.container-city{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+
+}  
+.container-icon{
+    height: 350px;
+    width: 350px;
+}
+.container-clima_temp{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    font-size: 50px;
+    gap: 20px;
+}
+.container-clima_viento{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;  
+    font-size: 30px; 
+}
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 120px;
+    height: 50px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: #dadbd2;
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 130px;
+  }
+  
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  body > div >img {
+    font-size: auto;
+    width: auto;
+    height: auto;
+    margin: auto;
+
+  }
+
+
+@media screen and (max-width: 1360px) {
+ .container-clima{
+    width: 700px;
+    height:  600px;   
+   
+}
+.container-city{
+    
+    gap: 15px;
+    font-size: 22px;
+
+}  
+.container-icon{
+    height: 350px;
+    width: 350px;
+}
+.container-clima_temp{
+    
+    font-size: 40px;
+    gap: 20px;
+}
+.container-clima_viento{
+      
+    font-size: 20px; 
+}
+
+}
+
+@media screen and (max-width: 900px) {
+.container-clima{
+    width: 600px;
+    height:  500px;   
+   
+}
+.container-city{
+    
+    gap: 10px;
+    font-size: 18px;
+
+}  
+.container-icon{
+    height: 300px;
+    width: 300px;
+}
+.container-clima_temp{
+    
+    font-size: 30px;
+    gap: 20px;
+}
+.container-clima_viento{
+      
+    font-size: 18px; 
+}
+
+}
+    
+@media screen and (max-width: 768px) {
+ .container-clima{
+    width: 500px;
+    height:  400px;   
+   
+}
+.container-city{
+    
+    gap: 10px;
+    font-size: 15px;
+
+}  
+.container-icon{
+    height: 250px;
+    width: 250px;
+}
+.container-clima_temp{
+    
+    font-size: 30px;
+    gap: 20px;
+}
+.container-clima_viento{
+      
+    font-size: 15px; 
+}
+   
+}
+
+@media screen and (max-width: 574px) {
+  .container-clima{
+    width: 400px;
+    height:  350px;   
+   
+}
+.container-city{
+    
+    gap: 10px;
+    font-size: 15px;
+
+}  
+.container-icon{
+    height: 220px;
+    width: 220px;
+}
+.container-clima_temp{
+    
+    font-size: 25px;
+    gap: 20px;
+}
+.container-clima_viento{
+      
+    font-size: 15px; 
+}
+  
+} 
